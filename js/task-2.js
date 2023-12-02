@@ -4,7 +4,7 @@ function makeArrey(firstArray, secondArray, maxLength) {
   const newArray = firstArray.concat(secondArray);
 
   if (newArray.length > maxLength) {
-    return newArray.splice(0, maxLength);
+    return newArray.slice(0, maxLength);
   } else {
     return newArray;
   }
